@@ -1,0 +1,183 @@
+body {
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: .1em;
+  padding: 2%;
+  font-family: Iosevka;
+}
+
+h2 {
+  font-family: Iosevka;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 0 0 15px 0;
+  z-index: 1;
+}
+
+footer {
+  margin-top: auto;
+  min-width: 100vw;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer hr {
+  margin: 5px 2%;
+}
+
+i {
+  margin: 8px;
+  color: black;
+  font-size: 25px
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #EEEEEF;
+  line-height: 1.5;
+}
+
+#content {
+  padding: 1% 2%;
+}
+
+#about-me {
+  margin: 2% auto;
+  max-width: 800px;
+}
+
+.about-section {
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  text-indent: 2em;
+}
+
+.about-section img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.right img {
+  float: right;
+  margin-left: 15px;
+}
+
+.left img {
+  float: left;
+  margin-right: 15px;
+}
+
+.right h2 {
+  text-align: right;
+}
+
+.left p, .left h2 {
+  text-align: left;
+}
+
+.about-section h2 {
+  clear: both; 
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 300px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.project-card .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 1.1em;
+}
+
+.project-card .card-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.project-card .mb-auto {
+  flex: 1;
+}
+
+.project-card-icon {
+  color: white;
+}
+
+.in-progress-badge {
+  margin-left: 10px;
+}
+
+.todo-list {
+  width: 600px;
+  margin: 2% auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+}
+
+.todo-list .accordion-button {
+  font-size: 20px;
+}
+
+.todo-done {
+  text-decoration: line-through;
+}
+
+#contact-form {
+  margin: 4% auto;
+  background-color: #DDDDDD;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .about-section {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .about-section h2 {
+    text-align: center;
+  }
+
+  .about-section img {
+    display: block;
+    margin: 2% auto;
+    float: none;
+  }
+
+  .about-section p {
+    display: block;
+    text-align: left;
+  }
+
+  #contact-form {
+    max-width: 380px;
+  }
+
+
+  .todo-list {
+    max-width: 360px;
+    min-width: 360px;
+  }
+}

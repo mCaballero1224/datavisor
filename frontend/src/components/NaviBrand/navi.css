@@ -1,0 +1,26 @@
+.navi-brand {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+.navi-brand img {
+	height: 50px;
+	background-color: #EEEEEE;
+	padding: 4px;
+	border-radius: 5px;
+}
+
+.navi-brand p {
+	margin: 0;
+	padding-left: 10px;
+	font-family: monospace;
+}
+
+.navi-brand:hover p {
+	color: #00FF00;
+}
+
+.navi-brand:hover img {
+	background-color: #00FF00;
+}
